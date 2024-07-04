@@ -1,14 +1,12 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/Design uten navn.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import twitterLight from '../../assets/twitter-light.svg';
-import twitterDark from '../../assets/twitter-dark.svg';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from '../../assets/cv.pdf';
+import pfp from '../../assets/pfp.jpeg';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -22,15 +20,13 @@ function Hero() {
     <section id='hero' className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
-          src={heroImg}
+          src={pfp}
+          style={{
+            border: `5px solid ${theme === 'light' ? '#222' : '#fff'}`,
+            boxShadow: `${theme === 'light' ? '#222' : '#fff'}`,
+          }}
           className={styles.hero}
           alt='Profile picture of Oliver Atherton'
-        />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt='Color mode icon'
-          onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>
@@ -51,8 +47,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          A full-stack developer from Huddersfield, West Yorkshire, with a
+          passion for creating elegant solutions for web applications.
         </p>
         <a href={CV} download>
           <button className='hover'>Resume</button>

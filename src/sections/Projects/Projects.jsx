@@ -1,9 +1,9 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
 import ProjectCard from '../../common/ProjectCard';
+import chess from '../../assets/chess.png';
+import chat from '../../assets/chat.png';
+import phone from '../../assets/phone.jpg';
+import bell from '../../assets/bell.png';
 
 function Projects() {
   return (
@@ -11,28 +11,32 @@ function Projects() {
       <h1 className='sectionTitle'>Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
+          src={bell}
+          width='40%'
+          link='https://github.com/olivrrcode/MERN-Social-Media'
+          h3='Social Media'
+          p='MERN Social Media'
+        />
+        <ProjectCard
+          src={chess}
+          width='100%'
           link='https://github.com/olivrrcode/Chess-Engine'
-          h3='Chess AI Project'
+          h3='Chess AI'
           p='Python Chess Game'
         />
         <ProjectCard
-          src={freshBurger}
+          src={chat}
+          width='45%'
           link='https://github.com/olivrrcode/Chat-Room'
           h3='Chat Room'
           p='Python Flask Chat Room'
         />
         <ProjectCard
-          src={hipsster}
+          src={phone}
+          width='55%'
           link='https://github.com/olivrrcode/Meetup-Web-App'
-          h3='Meetup Web App'
+          h3='CRUD Web App'
           p='React and Firebase App'
-        />
-        <ProjectCard
-          src={fitLift}
-          link='https://github.com/Ade-mir/company-landing-page-2'
-          h3='FitLift'
-          p='Fitness App'
         />
       </div>
     </section>

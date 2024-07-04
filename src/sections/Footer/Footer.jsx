@@ -2,9 +2,9 @@ import styles from './FooterStyles.module.css';
 
 function Footer() {
   return (
-    <section id="footer" className={styles.container}>
+    <section id='footer' className={styles.container}>
       <p>
-        &copy; 2024 Harris johnsen. <br />
+        &copy; 2024 Oliver Atherton. <br />
         All rights reserved.
       </p>
     </section>
