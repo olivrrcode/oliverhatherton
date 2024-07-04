@@ -24,6 +24,9 @@ function Hero() {
           style={{
             border: `5px solid ${theme === 'light' ? '#222' : '#fff'}`,
             boxShadow: `${theme === 'light' ? '#222' : '#fff'}`,
+            aspectRatio: '1',
+            objectFit: 'cover',
+            objectPosition: '5% center',
           }}
           className={styles.hero}
           alt='Profile picture of Oliver Atherton'
